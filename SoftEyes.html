@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" href="./css/info.css">
+    <link rel="stylesheet" href="./css/section-4.css">
+    <link rel="stylesheet" href="./css/rodapé.css">
+    <link rel="stylesheet" type="text/css" href="./css/cadastro.css" media="screen">
+    <link rel="stylesheet" href="./formulario.css">
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css'>
+    <link rel="shortcut icon" href="./img/Logo DEFINITIVA.svg">
+    <title>Soft Eyes</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        @font-face 
+        {
+        font-family: 'niramit';
+        src: url('Niramit-ExtraLight.ttf') format ('truetype');
+        font-weight: normal;
+        font-style: normal;
+        }
+        body
+        {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;
+        }
+        h1
+        {
+            font-family: 'niramit';
+            font-size: 40px;
+            font-weight: normal;
+        }
+        .titulo1 h1{
+            font-size: 42px;
+        }
+        .titulo2 h1{
+            font-size: 40px;
+        }
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+        .sobre h1
+        {
+            font-family: 'niramit';
+            font-size: 60px;
+            font-weight: normal;
+            color: antiquewhite;
+        }
+        h2{
+        font-size: 25px;
+        color: #eafbff;
+        }
+        .subtitulo{
+            font-size: 15px;
+        }
+        .convite h1{
+            color: antiquewhite;
+            font-size: 60px;
+        }
+        .convite h1{
+            font-size: 70px;
+        }
+        .fun h2{
+            font-size: 16px;
+            color: #21243ff5;
+        }
+        .col-md-6 h3{
+            position: relative;
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="pag1" id="home">
+        <div class="bg-modal" id="modal-">
+            <div class="modal-">
+                <span class="close" onclick="fecharModal()">&times;</span>
+
+                <!-- cadastro -->
+
+                <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+        <div class="cabecalho-form">
+            <h1 id="titulo"><strong>Cadastre-se</strong></h1>
+            <h3>E fique por dentro das novidades</h3>
+            <p id="subtitulo">Complete suas informações</p>
+            <br>
+        </div>
+
+        <!-- Início do formulário -->
+        <form>
+
+            <fieldset class="grupo">
+                <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset> 
+            <div class="grupo">
+                <!-- Campo de email com-->
+                <div class="campo">
+                    <label for="email"><strong>Email</strong></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                
+                <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe "campo" -->
+                <div class="campo">
+                    <label for="senioridade"><strong>Plano</strong></label>
+                    <select id="senioridade" required>
+                        <option selected disabled value="">Selecione</option>
+                        <option>Standart</option>
+                        <option>Smart</option>
+                        <option>Traveller</option>
+                    </select>
+                </div>
+            </div>
+
+            <fieldset class="grupo">
+            <!-- Botão para enviar o formulário -->
+            <button class="botao" type="submit" onsubmit="">Concluído</button>            
+        </form>
+            </div>
+        </div>
+        <header class="main_header">
+            <nav class="menu-principal">
+                <div class="logo">
+                    <a href=""><img src="./img/Logo DEFINITIVA.svg" alt="Logo SoftEyes"/></a>
+                </div>
+                <div class="navbar">
+                    <div class="aligne">
+                        <ul>
+                            <li>
+                                <a href="#home">Home</a>
+                            </li>
+                            <li>
+                                <a href="#news">Novidades</a>
+                            </li>
+                            <li>
+                                <a href="#sobre">Sobre</a>
+                            </li>
+                            <li>
+                                <a href="#preco">Planos & Preços</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="titulo">
+                <ul style="list-style: none;">
+                    <li>
+                        <div class="titulo1">
+                            <h1>
+                                A combinação <strong>perfeita </strong>entre</h1>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="titulo2">
+                            <h1>
+                                <strong>Tecnologia, Conforto e Elegância</strong>  </h1>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="slides">
+                    <input type="radio" name="slide" id="slide-1" checked>
+                    <input type="radio" name ="slide" id="slide-2">
+                    <input type="radio" name="slide" id="slide-3">
+                    <input type="radio" name="slide" id="slide-4">
+                    <input type="radio" name="slide" id="slide-5">
+                    <div class="slide s1">
+                        <img src="./img/slogam softeyes.png" alt="Slogam com protótipo do oculos">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/foto softeyes 7.png" alt="Protótipo oculos softeyes">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/FOTO SOFTEYES 3 definitiva.png" alt="Homem usando protótipo de oculos softeyes">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/FOTO SOFTEYES 4  definitiva.png" alt="Protótipo oculos softeyes">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/foto softeyes 2.png" alt="Peças do Protótipo de oculos softeyes">
+                    </div>
+                </div>
+                <div class="navigation">
+                    <label class="bar"for="slide-1"></label>
+                    <label class="bar" for="slide-2"></label>
+                    <label class="bar" for="slide-3"></label>
+                    <label class="bar" for="slide-4"></label>
+                    <label class="bar" for="slide-5"></label>
+                </div>
+            </div>
+        </main>
+    </section>
+    <section class="pag2">
+            <div class="convite" id="news">
+                <ul style="list-style: none;">
+                    <li>
+                        <div class="conheca">
+                            <h1>Conheça o futuro</h1>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="softeyes">
+                            <h1>Conheça os <strong>SoftEyes</strong></h1>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="catalogos">
+                <ul style="list-style: none;">
+                    <li>
+                        <div class="box-info1">
+                            <div class="infoimg">
+                                <img src="./img/foto softeyes 8 carac - Copia.png" alt="Imagem Óculos SpftEyes">
+                            </div>
+                            <div class="informacoes1">
+                                <h2><strong>O que é um <em>"SoftEyes"</em> ?</strong></h2>
+                                <p>
+                                    Os óculos mais inovadores do mercado, que exalam elegância, 
+                                    extravasam no conforto e possuem tecnologia de ponta, permitido 
+                                    o seu usuário desfrutar de uma experiência fantástica.	Utilizando 
+                                    tecnologia de realidade aumentada, você consegue acessar o menu do 
+                                    óculos, para configurá-lo. Ele também já vem de fábrica com um filtro 
+                                    de luz azul, para evitar cansaço na vista. O "SoftEyes" conta 
+                                    também com um aplicativo para celular, que suporta tanto IOS 
+                                    quanto Android. Neste App você é capaz de gerenciar suas gravações, 
+                                    configurar a assistente virtual, para ficar do seu jeito, além de 
+                                    conseguir expandir a memória na nuvem, dos seus óculos. Comprando o pacote 
+                                    "Travel", você recebe 100gb de memória a mais na nuvem além dos 50gb iniciais e, sem precisar pagar uma 
+                                    assinatura mensal. 
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-info2">
+                            <div class="infoimg">
+                                <img src="./img/foto caracteristicas .png" alt="Imagem Óculos SoftEyes">
+                            </div>
+                            <div class="position">
+                                <div class="informacoes2">
+                                    <h2><strong>Funcionalidades :</strong></h2>
+                                    <ul style="list-style: none;">
+                                        <li>
+                                            <div class="fun">
+                                                <h2 class="subtitulo">-  Adaptatividade a diversos tipos de rosto</h2>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fun">
+                                                <h2 class="subtitulo">-  Câmera que grava em 4k
+                                                </h2>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fun">
+                                                <h2 class="subtitulo">-  Viedos de até 30 horas em 1080p</h2>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fun">
+                                                <h2 class="subtitulo">-  Lente Ultra-Angular</h2>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fun">
+                                                <h2 class="subtitulo">-  Filtro de luz azul</h2>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fun">
+                                                <h2 class="subtitulo">-  Autonomia de 60 Horas</h2>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fun">
+                                                <h2 class="subtitulo">-  Carregamento em até 1 Hora</h2>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fun">
+                                                <h2 class="subtitulo">-  Aplicativo assistente para Android e IOS</h2>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fun">
+                                                <h2 class="subtitulo">-  Assistente virtual</h2>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fun">
+                                                <h2 class="subtitulo">-  Armazenamento inicial 100Gb</h2>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fun">
+                                                <h2 class="subtitulo">-  Menu de informações por realidade aumentada</h2>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    </section>
+    <section class="pag3">
+            <div class="cards">
+                <div class="sobre">
+                    <h1 id="sobre"><strong>Sobre :</strong></h1>
+                </div>
+                <ul>
+                    <li class="lcard1">
+                        <div class="card1">
+                            <div class="icon">
+                                <img src="./img/undraw_creative_thinking_re_9k71.svg" alt="Pensamento Criativo">
+                            </div>
+                            <div class="conteudo">
+                                <h2>Pensamento Criativo</h2>
+                                <p>- A priori, a proposta do nosso grupo consistia em 
+                                    criar um óculos que pudesse gravar o seu dia a dia,
+                                    com o propósito de capturar bons momentos, ou até te 
+                                    ajudar a lembrar de algo. Então, decidimos ir mais 
+                                    além com a ideia, e daí tivemos um insight, que resultou
+                                    na criação do <em>"SoftEyes"</em>. Um Óculos super tecnológico
+                                    e muito estiloso, que interage com o usuário através
+                                    de Realidade Virtual e uma Assistente Virtual que 
+                                    atende pelo nome <em>"Friday"</em>.</p>
+                            </div>
+                            <button id="read-buttom">Ler Mais</button>
+                        </div>
+                    </li>
+                    <li class="lcard2">
+                        <div class="card2">
+                            <div class="icon">
+                                <img src="./img/undraw_fitting_pieces_re_nss7.svg" alt="Peças Utilizadas">
+                            </div>
+                            <div class="conteudo2">
+                                <h2>Materiais</h2>
+                                <div class="grafeno">
+                                    <img src="./img/grafeno foto 2.png" alt="Imagem Película de Grafeno">
+                                </div>
+                                <p>- Utilizamos uma película de grafeno para compor 
+                                     o display do <em>"SoftEyes"</em>. Este material consiste em uma camada 
+                                     fina de grafite, o que o torna muito leve. Além de ser bastante 
+                                     flexível é um ótimo condutor de energia com uma alta resistência 
+                                     e, por ser muito fino ele é transparente, mas ainda visível a 
+                                     olho nu, já que permite a passagem de 97% a 98% da luz incidente.</p>
+                            </div>
+                            <button id="read-buttom2">Ler Mais</button>
+                        </div>
+                    </li>
+                    <li class="lcard3">
+                        <div class="card3">
+                            <div class="icon">
+                                <img src="./img/undraw_team_spirit_re_yl1v.svg" alt="Espírito de Time">
+                            </div>
+                            <div class="conteudo3">
+                                <h2>Nosso Grupo</h2>
+                                <h2 class="subtitulo">- Marcelo Hage</h2>
+                                <div class="mini-perfil">
+                                    <img src="./img/marcelo foto definitiva .png" alt="Foto de perfil Marcelo Hage">
+                                </div>
+                                <p> <strong>18 Anos</strong></p>
+                                <p> - Marcelo Hage, vulgo <strong>"Celo"</strong>, faz Engenharia da Computação na instituição <strong>Senai Cimatec</strong>, 
+                                    atualmente cursando o primeiro semestre. No projeto <em>"SoftEyes"</em>, Celo foi a pessoa 
+                                    que gerênciou todos os setores, para que tudo saísse como o esperado. 
+                                     </p>
+                                <h2 class="subtitulo">- Mateus Dietrich</h2>
+                                <div class="mini-perfil">
+                                    <img src="./img/foto perfil diez.png" alt="Foto de perfil Mateus Dietrich">
+                                </div>
+                                <p><strong>19 Anos</strong></p>
+                                <p> - Mateus Dietrich, de origem alemã, muito conhecido por <strong>"Diez"</strong> cursa Engenharia da Computação na instituição <strong>Senai Cimatec</strong>, 
+                                    atualmente está no primeiro semestre. No projeto <em>"SoftEyes"</em>, Diez
+                                    atuou na parte de design dos protótipos. Ficando responsável por toda gestão criativa deste projeto.</p>
+                                <h2 class="subtitulo">- Felipe Farias</h2>
+                                <div class="mini-perfil">
+                                    <img src="./img/fatz foto definitiva .png" alt="Foto de perfil Felipe Farias">
+                                </div>
+                                <p><strong>18 Anos</strong></p>
+                                <p> - Felipe Farias, também conhecido como <strong>"Farias"</strong>, é estudante de Engenharia da Computação na instituição <strong>Senai Cimatec</strong>, 
+                                    atualmente cursando o primeiro semestre. No projeto <em>"SoftEyes"</em>. Farias ficou encarregado na produção dos exemplares,
+                                    para que não houvesse nenhum erro na fabricação.</p>
+                            </div>
+                            <button id="read-buttom3">Ler Mais</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    </section>
+    <section class="pag4">
+            <div class="titulo4">
+                <h1 id="preco"><strong>Planos & Preços :</strong></h1>
+            </div>
+            <div class="contabilidade">
+                <div class="planos">
+                    <h1><strong>Standart</strong></h1>
+                    <ul style="list-style: none";>
+                        <li>
+                            <div class="preco">
+                                <ul style="list-style: none;">
+                                    <li>
+                                        <h2><strong>$39.90</strong></h2>
+                                    </li>
+                                    <li>
+                                        <h3><strong>Mês</strong></h3>
+                                    </li>
+                                </ul>                        
+                            </div>
+                        </li>
+                        <li>
+                            <div class="detalhes">
+                                <ul style="list-style: none";>
+                                    <li>
+                                        <h2><strong>+ 50gb</strong></h2>
+                                    </li>
+                                    <li>
+                                        <h3><strong>De Memória</strong></h3>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="open-modal" onclick="abrirModal()">Assine Já!</button>
+                </div>
+                <div class="planos">
+                    <h1><strong>Smart</strong></h1>
+                    <ul style="list-style: none";>
+                        <li>
+                            <div class="preco">
+                                <ul style="list-style: none;">
+                                    <li>
+                                        <h2><strong>$59.90</strong></h2>
+                                    </li>
+                                    <li>
+                                        <h3><strong>Mês</strong></h3>
+                                    </li>
+                                </ul>                        
+                            </div>
+                        </li>
+                        <li>
+                            <div class="detalhes">
+                                <ul  style="list-style: none";>
+                                    <li>
+                                        <h2><strong>+ 100gb</strong></h2>
+                                    </li>
+                                    <li>
+                                        <h3><strong>De Memória</strong></h3>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="open-modal" onclick="abrirModal()">Assine Já!</button>
+                </div>
+                <div class="planos">
+                    <h1><strong>Traveler</strong></h1>
+                    <ul style="list-style: none";>
+                        <li>
+                            <div class="preco">
+                                <ul style="list-style: none;">
+                                    <li>
+                                        <h2><strong>$179.90</strong></h2>
+                                    </li>
+                                    <li>
+                                        <h3><strong>Ano</strong></h3>
+                                    </li>
+                                </ul>                        
+                            </div>
+                        </li>
+                        <li>
+                            <div class="detalhes">
+                                <ul  style="list-style: none";>
+                                    <li>
+                                        <h2><strong>+ 500gb</strong></h2>
+                                    </li>
+                                    <li>
+                                        <h3><strong>De Memória</strong></h3>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="open-modal" onclick="abrirModal()">Assine Já!</button>
+                </div>
+            </div>
+    </section>
+    <footer class="footer" id="contact">
+            <div class="container">
+              <div class="footer-contact">
+                <div class="row align-items-center">
+                  <div class="col-md-6">
+                    <h4>E-mail</h4>
+                    <p class="size">marcelo.hage@aln.senaicimatec.edu.br</p>
+                    <h4>Telefone</h4>
+                    <p class="size">+55 (71) 98701-7240</p>
+                  </div>
+                  <div class="col-md-6">
+                    <h3>Redes Sociais</h3>
+                    <div class="rede-social">
+                        <a href="https://www.linkedin.com/in/marcelo-hage-530583251/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/marcelohage_" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/marcelohage" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    
+                  </div>
+                  <div class="logo-rodape">
+                    <img src="./img/Logo DEFINITIVA.svg" alt="Logo SoftEyes">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="copyright">
+              <div class="container">
+                <div class="row align-items-center">
+                  <div class="col-md-6">
+                    <div class="copy-text">
+                      <p>&copy; <a href="#">SoftEyes</a> - Todos os Direitos Reservados.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="copy-menu">
+                      <a href="#">Termos de Uso</a>
+                      <a href="#">Privacidade</a>
+                    </div>
+                  </div>
+                
+                </div>
+              
+              </div>
+            </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+
+/* MODAL1: */
+
+
+
+
+.bg-modal{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 2;
+    top: -100%;
+    display: block;
+    transition: 450ms;
+}
+
+.modal-{
+    width: 30vw;
+    height: 55vh;
+    background-color:#fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 80px auto 0 auto;
+    padding: 40px;
+}
+
+.container span{
+    float: right;
+    font-size: 40px;
+    color:rgba(0, 0, 0);
+    margin: 20px 20px;
+    transition: 450ms;
+    cursor: pointer;
+}
+
+.container span:hover{
+    color: rgb(128, 128, 128);
+    transition: 450ms;
+}
+
+
